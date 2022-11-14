@@ -16,5 +16,5 @@ output = query({
 })
 i = 0
 for o in output:
-    print('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
+    st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
     i = i + 1
