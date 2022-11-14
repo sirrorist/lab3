@@ -16,7 +16,7 @@ output = query({
 })
 i = 0
 if output == 0:
-	st.write("")
+	st.write(" ")
 else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
