@@ -14,9 +14,9 @@ user_input = st.text_input("Please rate our services >>: ")
 output = query({
 	"inputs": str(user_input)
 })
-a = len(output)
+a = output.count()
 i = 0
-if a == 1:
+if a == 0:
 	st.write("Введите предложение")
 else:
 	for o in output:
