@@ -15,8 +15,8 @@ output = query({
 	"inputs": str(user_input)
 })
 i = 0
-if output == "":
-	st.write(" ")
+if output == " ":
+	st.write("хули")
 else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
