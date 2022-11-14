@@ -15,7 +15,7 @@ output = query({
 	"inputs": str(user_input)
 })
 i = 0
-if output == 0:
+if len(output) == 0:
 	st.write(" ")
 else:
 	for o in output:
