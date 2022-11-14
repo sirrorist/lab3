@@ -14,9 +14,10 @@ user_input = st.text_input("Please rate our services >>: ")
 output = query({
 	"inputs": str(user_input)
 })
+a = len(output)
 i = 0
-if output == "":
-	st.write("xt")
+if a == 1:
+	st.write("Введите предложение")
 else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
