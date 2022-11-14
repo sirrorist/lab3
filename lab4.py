@@ -17,7 +17,7 @@ output = query({
 a = len(output)
 i = 0
 if a == 1:
-	st.write("Работаем только с предложение")
+	st.write("Работаем только с предложениями")
 else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
