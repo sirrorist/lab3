@@ -8,8 +8,8 @@ def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
 	return response.json()
 
-st.write("# Real Time Sentiment Analysis")
-user_input = st.text_input("Please rate our services >>: ")
+st.write("# Классификация слов в предложении на Русском языке по средством присвоения токенов")
+user_input = st.text_input("Пожалуйста введите предложение >>: ")
 
 output = query({
 	"inputs": str(user_input)
@@ -17,7 +17,7 @@ output = query({
 a = len(output)
 i = 0
 if a == 1:
-	st.write("Введите предложение")
+	st.write("Работаем только с предложение")
 else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
