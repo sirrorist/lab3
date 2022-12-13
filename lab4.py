@@ -17,8 +17,9 @@ output = query({
 i = 0
 try:
 	while True:
-		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
-		i = i + 1
+		for o in output:
+			st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
+			i = i + 1
 except ValueError:
 	st.write("Работаем только с предложениями")
 # a = len(output)
