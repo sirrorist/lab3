@@ -15,18 +15,18 @@ output = query({
 	"inputs": str(user_input)
 })
 i = 0
-try:
-	while True:
-		for o in output:
-			st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
-			i = i + 1
-except ValueError:
-	st.write("Работаем только с предложениями")
-# a = len(output)
-# i = 0
-# if a == 1:
+# try:
+# 	while True:
+# 		for o in output:
+# 			st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
+# 			i = i + 1
+# except ValueError:
 # 	st.write("Работаем только с предложениями")
-# else:
-# 	for o in output:
-# 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
-# 		i = i + 1
+a = len(output)
+i = 0
+if a == 1:
+	st.write("Работаем только с предложениями")
+else:
+	for o in output:
+		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
+		i = i + 1
