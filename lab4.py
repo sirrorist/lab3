@@ -39,4 +39,4 @@ else:
 	for o in output:
 		st.write('Cлово - ', output[i]['word'], ', группа - ', output[i]['entity_group'], '\n')
 		i = i + 1
-	st.write(“Данную работу выполнили Максим Б. и Евгений В.”) 
+	st.write("Данную работу выполнили Максим Б. и Евгений В.") 
