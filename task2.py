@@ -18,7 +18,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Данную работу выполнили Максим Б. и Евгений В."}
 
 
 @app.post("/predict/")
